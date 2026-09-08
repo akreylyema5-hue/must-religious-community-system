@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Login to the MUST Faith Coordination System">
+
+    <title>Login | MUST Faith Coordination</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+</head>
+
+
+<body class="login-page">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+
+            <a href="../index.html" class="logo">
+
+                <div class="logo-mark">
+                    M
+                </div>
+
+                <div>
+
+                    <span class="logo-title">
+                        MUST
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Faith Coordination
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation">
+
+                ☰
+
+            </button>
+
+
+            <nav
+                class="navigation"
+                id="navigation">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-button active">
+
+                    Login
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         LOGIN AREA
+         ===================================================== -->
+
+    <main class="login-main">
+
+
+        <div class="login-wrapper">
+
+
+            <!-- =================================================
+                 LEFT INFORMATION PANEL
+                 ================================================= -->
+
+            <section class="login-information">
+
+
+                <div class="login-pattern"></div>
+
+
+                <div class="login-information-content">
+
+
+                    <span class="page-label">
+                        MUST COMMUNITY
+                    </span>
+
+
+                    <h1>
+                        Welcome back.
+                    </h1>
+
+
+                    <p>
+                        Access the MUST Faith Coordination
+                        System to manage religious activities,
+                        view schedules, coordinate venues and
+                        stay connected with the university
+                        community.
+                    </p>
+
+
+                    <div class="login-features">
+
+
+                        <div class="login-feature">
+
+                            <div class="feature-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Coordinate Activities
+                                </strong>
+
+                                <span>
+                                    Plan religious activities
+                                    around academic schedules.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="login-feature">
+
+                            <div class="feature-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Manage Your Community
+                                </strong>
+
+                                <span>
+                                    Keep your faith community
+                                    information organized.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="login-feature">
+
+                            <div class="feature-icon">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Stay Informed
+                                </strong>
+
+                                <span>
+                                    Receive important campus
+                                    announcements and updates.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="login-quote">
+
+                    <span>
+                        "Harmony in diversity,
+                        excellence in learning."
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 LOGIN FORM
+                 ================================================= -->
+
+            <section class="login-form-section">
+
+
+                <div class="login-form-container">
+
+
+                    <div class="mobile-login-logo">
+
+                        <div class="logo-mark">
+                            M
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                MUST
+                            </strong>
+
+                            <span>
+                                Faith Coordination
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="login-heading">
+
+                        <span class="small-label">
+                            ACCOUNT ACCESS
+                        </span>
+
+                        <h2>
+                            Sign in to your account
+                        </h2>
+
+                        <p>
+                            Enter your credentials to
+                            continue.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         ERROR / SUCCESS MESSAGE
+                         ================================================= -->
+
+                    <div
+                        class="login-message"
+                        id="loginMessage">
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         FORM
+                         ================================================= -->
+
+                    <form
+                        id="loginForm"
+                        class="login-form"
+                        novalidate>
+
+
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    @
+                                </span>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your university email"
+                                    autocomplete="email"
+                                    required>
+
+                            </div>
+
+                            <small
+                                class="field-error"
+                                id="emailError">
+
+                            </small>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+
+                            <div class="password-label-row">
+
+                                <label for="password">
+                                    Password
+                                </label>
+
+                                <a href="#">
+                                    Forgot password?
+                                </a>
+
+                            </div>
+
+
+                            <div class="input-wrapper">
+
+                                <span class="input-icon">
+                                    •
+                                </span>
+
+                                <input
+                                    type="password"
+                                    id="password"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required>
+
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    id="passwordToggle"
+                                    aria-label="Show password">
+
+                                    Show
+
+                                </button>
+
+                            </div>
+
+
+                            <small
+                                class="field-error"
+                                id="passwordError">
+
+                            </small>
+
+                        </div>
+
+
+
+                        <div class="remember-row">
+
+                            <label class="checkbox-label">
+
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe">
+
+                                <span class="custom-checkbox"></span>
+
+                                <span>
+                                    Remember me
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <button
+                            type="submit"
+                            class="login-submit"
+                            id="loginSubmit">
+
+                            <span id="loginButtonText">
+                                Sign In
+                            </span>
+
+                            <span
+                                class="login-spinner"
+                                id="loginSpinner">
+                            </span>
+
+                        </button>
+
+
+                    </form>
+
+
+
+                    <!-- =================================================
+                         DEMO ACCOUNT INFORMATION
+                         ================================================= -->
+
+                    <div class="demo-login">
+
+                        <div class="demo-icon">
+                            i
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Frontend Demo
+                            </strong>
+
+                            <p>
+                                Authentication will be connected
+                                to the Java backend later.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="login-divider">
+
+                        <span>
+                            OR
+                        </span>
+
+                    </div>
+
+
+
+                    <a
+                        href="../index.html"
+                        class="back-home">
+
+                        ← Continue without signing in
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer login-footer">
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MUST Religious Community
+                    Coordination System.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+
+</body>
+
+</html>

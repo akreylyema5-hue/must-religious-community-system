@@ -1,0 +1,632 @@
+/* =====================================================
+   ACTIVITIES PAGE
+   ===================================================== */
+
+
+/* ================= HERO ================= */
+
+.activity-hero {
+    padding-bottom: 70px;
+}
+
+
+/* ================= MAIN ================= */
+
+.activities-section {
+    background: #fbfcfb;
+    padding: 55px 0 90px;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.activity-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+
+    margin-bottom: 40px;
+}
+
+.activity-stat {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 13px;
+
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.stat-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 11px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+.stat-icon.green {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.stat-icon.gold {
+    background: #fff5df;
+    color: #c38413;
+}
+
+.stat-icon.blue {
+    background: #eaf3ff;
+    color: #3677c3;
+}
+
+.stat-icon.purple {
+    background: #f1ebff;
+    color: #754bc4;
+}
+
+.activity-stat strong {
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 22px;
+}
+
+.activity-stat span {
+    display: block;
+
+    color: #7b8780;
+
+    font-size: 10px;
+}
+
+
+/* ================= TOOLS ================= */
+
+.activity-tools {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 13px;
+
+    padding: 17px;
+
+    display: flex;
+    gap: 12px;
+
+    box-shadow: var(--shadow-sm);
+
+    margin-bottom: 45px;
+}
+
+.activity-search {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+
+    height: 46px;
+
+    padding: 0 13px;
+
+    background: #fafcfb;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.activity-search span {
+    color: var(--primary);
+    font-size: 21px;
+    margin-right: 9px;
+}
+
+.activity-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 13px;
+
+    color: var(--dark);
+}
+
+.activity-tools select {
+    height: 46px;
+
+    min-width: 175px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    background: var(--white);
+
+    color: var(--dark);
+
+    outline: none;
+
+    cursor: pointer;
+
+    font-size: 12px;
+}
+
+
+/* ================= HEADING ================= */
+
+.activities-heading {
+    display: flex;
+
+    align-items: end;
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+.activities-heading h2 {
+    color: var(--dark);
+
+    font-size: 29px;
+
+    margin-top: 5px;
+}
+
+.view-options {
+    display: flex;
+    gap: 5px;
+}
+
+.view-button {
+    width: 36px;
+    height: 36px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: var(--white);
+
+    color: #78847d;
+
+    cursor: pointer;
+}
+
+.view-button.active,
+.view-button:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+
+/* ================= ACTIVITY GRID ================= */
+
+.activities-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= ACTIVITY CARD ================= */
+
+.activity-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    display: flex;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.activity-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+    border-color: #c8d8cf;
+}
+
+.activity-card.hidden {
+    display: none;
+}
+
+
+/* ================= DATE ================= */
+
+.activity-date {
+    min-width: 92px;
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.activity-date strong {
+    font-size: 31px;
+    line-height: 1;
+}
+
+.activity-date span {
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    margin-top: 5px;
+}
+
+.muslim-date {
+    background: #eaf8f0;
+    color: #087548;
+}
+
+.adventist-date {
+    background: #fff4df;
+    color: #bd7c13;
+}
+
+.seminar-date {
+    background: #eaf3ff;
+    color: #3175c6;
+}
+
+.dialogue-date {
+    background: #f1ebff;
+    color: #7045bb;
+}
+
+
+/* ================= CONTENT ================= */
+
+.activity-content {
+    padding: 20px;
+
+    flex: 1;
+}
+
+.activity-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 11px;
+}
+
+.activity-category {
+    font-size: 9px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+    padding: 5px 8px;
+
+    border-radius: 20px;
+}
+
+.activity-category.worship {
+    color: #2472bc;
+    background: #eaf3ff;
+}
+
+.activity-category.prayer {
+    color: #087548;
+    background: #eaf8f0;
+}
+
+.activity-category.fellowship {
+    color: #9b6510;
+    background: #fff4df;
+}
+
+.activity-category.seminar {
+    color: #6743b0;
+    background: #f1ebff;
+}
+
+.activity-category.dialogue {
+    color: #a24f26;
+    background: #fff0e8;
+}
+
+.activity-status {
+    color: #277044;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.activity-card h3 {
+    color: var(--dark);
+
+    font-size: 17px;
+
+    line-height: 1.3;
+
+    margin-bottom: 7px;
+}
+
+.activity-card p {
+    font-size: 12px;
+
+    line-height: 1.55;
+
+    margin-bottom: 15px;
+}
+
+.activity-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.activity-details span {
+    color: #68756d;
+
+    font-size: 10px;
+}
+
+.activity-footer {
+    padding-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.community-name {
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.activity-footer a {
+    color: var(--primary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* ================= LIST VIEW ================= */
+
+.activities-grid.list-view {
+    grid-template-columns: 1fr;
+}
+
+.activities-grid.list-view .activity-card {
+    width: 100%;
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.activity-no-results {
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.activity-no-results.show {
+    display: block;
+}
+
+.no-result-icon {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 15px;
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+}
+
+.activity-no-results h3 {
+    color: var(--dark);
+
+    margin-bottom: 5px;
+}
+
+.activity-no-results p {
+    font-size: 12px;
+}
+
+
+/* ================= COORDINATION MESSAGE ================= */
+
+.coordination-message {
+    background: #eef7f1;
+
+    border-top: 1px solid #dbece1;
+
+    padding: 55px 0;
+}
+
+.coordination-content {
+    display: flex;
+
+    align-items: center;
+
+    gap: 22px;
+
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.coordination-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    border-radius: 14px;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 21px;
+}
+
+.coordination-content > div:last-child span {
+    color: var(--secondary);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+}
+
+.coordination-content h2 {
+    color: var(--dark);
+
+    font-size: 25px;
+
+    margin: 4px 0 5px;
+}
+
+.coordination-content p {
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .activity-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .activity-tools {
+        flex-direction: column;
+    }
+
+    .activity-tools select {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .activity-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .activities-heading {
+        align-items: center;
+    }
+
+    .view-options {
+        display: none;
+    }
+
+    .activity-card {
+        flex-direction: column;
+    }
+
+    .activity-date {
+        min-width: 100%;
+        padding: 13px;
+
+        flex-direction: row;
+
+        gap: 8px;
+    }
+
+    .activity-date strong {
+        font-size: 24px;
+    }
+
+    .activity-date span {
+        margin-top: 0;
+    }
+
+    .coordination-content {
+        align-items: flex-start;
+    }
+
+}

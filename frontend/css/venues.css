@@ -1,0 +1,998 @@
+/* =====================================================
+   MUST VENUES PAGE
+   ===================================================== */
+
+
+/* ================= HERO ================= */
+
+.venue-hero {
+    padding-bottom: 70px;
+}
+
+
+/* ================= MAIN ================= */
+
+.venues-section {
+    background: #f8faf9;
+
+    padding: 55px 0 90px;
+}
+
+
+/* ================= STATISTICS ================= */
+
+.venue-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 35px;
+}
+
+
+.venue-stat {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+.venue-stat-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.venue-stat-icon.green {
+    background: var(--primary-light);
+
+    color: var(--primary);
+}
+
+
+.venue-stat-icon.blue {
+    background: #eaf3ff;
+
+    color: #3677c3;
+}
+
+
+.venue-stat-icon.gold {
+    background: #fff4df;
+
+    color: #bb7b14;
+}
+
+
+.venue-stat-icon.purple {
+    background: #f1ebff;
+
+    color: #754bc4;
+}
+
+
+.venue-stat strong {
+    display: block;
+
+    color: var(--dark);
+
+    font-size: 22px;
+}
+
+
+.venue-stat span {
+    display: block;
+
+    color: #7a867f;
+
+    font-size: 10px;
+}
+
+
+/* ================= TOOLS ================= */
+
+.venue-tools {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+
+    padding: 17px;
+
+    display: flex;
+
+    gap: 12px;
+
+    box-shadow: var(--shadow-sm);
+
+    margin-bottom: 42px;
+}
+
+
+.venue-search {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    height: 46px;
+
+    padding: 0 13px;
+
+    background: #fafcfb;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+}
+
+
+.venue-search span {
+    color: var(--primary);
+
+    font-size: 21px;
+
+    margin-right: 8px;
+}
+
+
+.venue-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: var(--dark);
+
+    font-size: 13px;
+}
+
+
+.venue-tools select {
+    min-width: 170px;
+
+    height: 46px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+
+    background: var(--white);
+
+    color: var(--dark);
+
+    outline: none;
+
+    cursor: pointer;
+
+    font-size: 11px;
+}
+
+
+/* ================= HEADING ================= */
+
+.venues-heading {
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+
+.venues-heading h2 {
+    color: var(--dark);
+
+    font-size: 29px;
+
+    margin-top: 5px;
+}
+
+
+.venue-result-count {
+    color: #78847d;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* ================= GRID ================= */
+
+.venues-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= CARD ================= */
+
+.venue-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow-sm);
+
+    transition: .3s;
+}
+
+
+.venue-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+
+    border-color: #c9dacf;
+}
+
+
+.venue-card.hidden {
+    display: none;
+}
+
+
+/* ================= VENUE VISUAL ================= */
+
+.venue-image {
+    height: 155px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.venue-image::before,
+.venue-image::after {
+    content: "";
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    opacity: .25;
+}
+
+
+.venue-image::before {
+    width: 170px;
+    height: 170px;
+
+    border: 30px solid currentColor;
+
+    top: -80px;
+    left: -50px;
+}
+
+
+.venue-image::after {
+    width: 120px;
+    height: 120px;
+
+    border: 20px solid currentColor;
+
+    bottom: -65px;
+    right: -30px;
+}
+
+
+.chapel-image {
+    background:
+        linear-gradient(
+            135deg,
+            #dfeee5,
+            #b9d8c6
+        );
+
+    color: #28744f;
+}
+
+
+.hall-image {
+    background:
+        linear-gradient(
+            135deg,
+            #e8eef7,
+            #c5d8eb
+        );
+
+    color: #3677b9;
+}
+
+
+.prayer-image {
+    background:
+        linear-gradient(
+            135deg,
+            #e1f1eb,
+            #b9dfce
+        );
+
+    color: #15734b;
+}
+
+
+.student-image {
+    background:
+        linear-gradient(
+            135deg,
+            #fff0d5,
+            #efd3a1
+        );
+
+    color: #ad7419;
+}
+
+
+.conference-image {
+    background:
+        linear-gradient(
+            135deg,
+            #eee8f9,
+            #d3c5ea
+        );
+
+    color: #7550af;
+}
+
+
+.venue-image-icon {
+    position: relative;
+
+    z-index: 2;
+
+    width: 65px;
+    height: 65px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(255,255,255,.65);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+
+    backdrop-filter: blur(4px);
+}
+
+
+.venue-capacity {
+    position: absolute;
+
+    z-index: 3;
+
+    right: 12px;
+    bottom: 12px;
+
+    background:
+        rgba(255,255,255,.9);
+
+    color: var(--dark);
+
+    padding: 6px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* ================= CONTENT ================= */
+
+.venue-content {
+    padding: 19px;
+}
+
+
+.venue-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.venue-type {
+    padding: 5px 8px;
+
+    border-radius: 20px;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .4px;
+}
+
+
+.venue-type.chapel {
+    color: #267049;
+
+    background: #e9f6ee;
+}
+
+
+.venue-type.hall {
+    color: #316eaa;
+
+    background: #eaf3ff;
+}
+
+
+.venue-type.prayer {
+    color: #087548;
+
+    background: #e9f7f0;
+}
+
+
+.venue-type.conference {
+    color: #7049ad;
+
+    background: #f1ebff;
+}
+
+
+.venue-status {
+    font-size: 9px;
+
+    font-weight: 800;
+}
+
+
+.venue-status.available {
+    color: #2a7549;
+}
+
+
+.venue-status.busy {
+    color: #ad7517;
+}
+
+
+.venue-card h3 {
+    color: var(--dark);
+
+    font-size: 17px;
+
+    margin-bottom: 7px;
+}
+
+
+.venue-card p {
+    color: #77827c;
+
+    font-size: 11px;
+
+    line-height: 1.55;
+
+    min-height: 52px;
+
+    margin-bottom: 15px;
+}
+
+
+.venue-details {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+
+.venue-details span {
+    color: #6f7c74;
+
+    font-size: 9px;
+}
+
+
+.venue-footer {
+    padding-top: 13px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+.venue-footer > span {
+    color: #87918b;
+
+    font-size: 8px;
+}
+
+
+.venue-details-button {
+    border: none;
+
+    background: transparent;
+
+    color: var(--primary);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.venue-no-results {
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.venue-no-results.show {
+    display: block;
+}
+
+
+.no-result-icon {
+    width: 58px;
+    height: 58px;
+
+    background: var(--primary-light);
+
+    color: var(--primary);
+
+    border-radius: 50%;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+
+.venue-no-results h3 {
+    color: var(--dark);
+
+    margin-bottom: 5px;
+}
+
+
+.venue-no-results p {
+    color: #7c8781;
+
+    font-size: 11px;
+}
+
+
+/* ================= POLICY ================= */
+
+.venue-policy {
+    margin-top: 45px;
+
+    background: #edf7f1;
+
+    border: 1px solid #d6e9dd;
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 17px;
+}
+
+
+.policy-icon {
+    width: 47px;
+    height: 47px;
+
+    flex-shrink: 0;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 19px;
+}
+
+
+.policy-content {
+    flex: 1;
+}
+
+
+.policy-content span {
+    color: #28704c;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+
+.policy-content h2 {
+    color: var(--dark);
+
+    font-size: 18px;
+
+    margin: 3px 0 5px;
+}
+
+
+.policy-content p {
+    color: #718078;
+
+    font-size: 10px;
+
+    line-height: 1.55;
+}
+
+
+.policy-button {
+    background: var(--primary);
+
+    color: var(--white);
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+
+.policy-button:hover {
+    background: var(--primary-dark);
+}
+
+
+/* ================= MODAL ================= */
+
+.venue-modal {
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+
+.venue-modal.show {
+    display: flex;
+}
+
+
+.modal-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        rgba(12,31,21,.55);
+
+    backdrop-filter: blur(3px);
+}
+
+
+.venue-modal-box {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background: var(--white);
+
+    border-radius: 16px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.22);
+
+    animation: modalOpen .2s ease;
+}
+
+
+@keyframes modalOpen {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px)
+            scale(.98);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+
+}
+
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+    right: 17px;
+
+    width: 32px;
+    height: 32px;
+
+    border: none;
+
+    background: #f1f4f2;
+
+    color: #647169;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+
+.venue-modal-box h2 {
+    color: var(--dark);
+
+    font-size: 24px;
+
+    margin: 7px 0;
+}
+
+
+.venue-modal-box > p {
+    color: #758179;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    margin-bottom: 22px;
+}
+
+
+.modal-info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-bottom: 22px;
+}
+
+
+.modal-info-grid > div {
+    background: #f7faf8;
+
+    border: 1px solid var(--border);
+
+    border-radius: 9px;
+
+    padding: 13px;
+}
+
+
+.modal-info-grid span {
+    display: block;
+
+    color: #87918b;
+
+    font-size: 8px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .5px;
+
+    margin-bottom: 4px;
+}
+
+
+.modal-info-grid strong {
+    color: var(--dark);
+
+    font-size: 11px;
+}
+
+
+.modal-button {
+    display: block;
+
+    text-align: center;
+
+    background: var(--primary);
+
+    color: var(--white);
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .venues-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .venue-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 750px) {
+
+    .venue-tools {
+        flex-direction: column;
+    }
+
+    .venue-tools select {
+        width: 100%;
+    }
+
+    .venue-policy {
+        align-items: flex-start;
+
+        flex-wrap: wrap;
+    }
+
+    .policy-button {
+        margin-left: 64px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .venues-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .venue-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .venues-heading {
+        align-items: center;
+    }
+
+    .venue-result-count {
+        display: none;
+    }
+
+    .venue-policy {
+        flex-direction: column;
+    }
+
+    .policy-button {
+        margin-left: 0;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+}

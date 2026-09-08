@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="MUST venues available for academic and religious activities">
+
+    <title>Venues | MUST Faith Coordination</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/venues.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         NAVIGATION
+         ================================================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+
+            <a href="../index.html" class="logo">
+
+                <div class="logo-mark">
+                    M
+                </div>
+
+                <div>
+
+                    <span class="logo-title">
+                        MUST
+                    </span>
+
+                    <span class="logo-subtitle">
+                        Faith Coordination
+                    </span>
+
+                </div>
+
+            </a>
+
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation">
+
+                ☰
+
+            </button>
+
+
+            <nav
+                class="navigation"
+                id="navigation">
+
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+
+                <a
+                    href="venues.html"
+                    class="active">
+
+                    Venues
+
+                </a>
+
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+
+                <a
+                    href="login.html"
+                    class="login-button">
+
+                    Login
+
+                </a>
+
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================================
+         PAGE HERO
+         ================================================= -->
+
+    <section class="page-hero venue-hero">
+
+        <div class="container">
+
+
+            <div class="breadcrumb">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <span>
+                    ›
+                </span>
+
+                <span>
+                    Venues
+                </span>
+
+            </div>
+
+
+            <span class="page-label">
+                CAMPUS SPACES
+            </span>
+
+
+            <h1>
+                Available Venues
+            </h1>
+
+
+            <p>
+                Explore university spaces that may be used for
+                religious, academic and community activities while
+                supporting proper scheduling and responsible use.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+         ================================================= -->
+
+    <main class="venues-section">
+
+        <div class="container">
+
+
+            <!-- =================================================
+                 VENUE STATISTICS
+                 ================================================= -->
+
+            <div class="venue-stats">
+
+
+                <div class="venue-stat">
+
+                    <div class="venue-stat-icon green">
+                        ⌂
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            5
+                        </strong>
+
+                        <span>
+                            Registered Venues
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="venue-stat">
+
+                    <div class="venue-stat-icon blue">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            3
+                        </strong>
+
+                        <span>
+                            Currently Available
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="venue-stat">
+
+                    <div class="venue-stat-icon gold">
+                        ◷
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            2
+                        </strong>
+
+                        <span>
+                            In Use
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="venue-stat">
+
+                    <div class="venue-stat-icon purple">
+                        ♙
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            5
+                        </strong>
+
+                        <span>
+                            Venue Managers
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SEARCH AND FILTER
+                 ================================================= -->
+
+            <div class="venue-tools">
+
+
+                <div class="venue-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="venueSearch"
+                        placeholder="Search venues...">
+
+                </div>
+
+
+                <select id="venueType">
+
+                    <option value="all">
+                        All Venue Types
+                    </option>
+
+                    <option value="hall">
+                        Hall
+                    </option>
+
+                    <option value="chapel">
+                        Chapel
+                    </option>
+
+                    <option value="prayer">
+                        Prayer Space
+                    </option>
+
+                    <option value="classroom">
+                        Classroom
+                    </option>
+
+                    <option value="conference">
+                        Conference Room
+                    </option>
+
+                </select>
+
+
+                <select id="venueStatus">
+
+                    <option value="all">
+                        All Status
+                    </option>
+
+                    <option value="available">
+                        Available
+                    </option>
+
+                    <option value="busy">
+                        Currently In Use
+                    </option>
+
+                </select>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SECTION HEADER
+                 ================================================= -->
+
+            <div class="venues-heading">
+
+                <div>
+
+                    <span class="small-label">
+                        CAMPUS LOCATIONS
+                    </span>
+
+                    <h2>
+                        Registered Venues
+                    </h2>
+
+                </div>
+
+
+                <span
+                    class="venue-result-count"
+                    id="venueResultCount">
+
+                    5 venues
+
+                </span>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VENUE GRID
+                 ================================================= -->
+
+            <div
+                class="venues-grid"
+                id="venuesGrid">
+
+
+                <!-- ================= VENUE 1 ================= -->
+
+                <article
+                    class="venue-card"
+                    data-name="university chapel"
+                    data-type="chapel"
+                    data-status="available">
+
+
+                    <div class="venue-image chapel-image">
+
+                        <span class="venue-image-icon">
+                            ✦
+                        </span>
+
+                        <span class="venue-capacity">
+                            Capacity: 250
+                        </span>
+
+                    </div>
+
+
+                    <div class="venue-content">
+
+
+                        <div class="venue-card-top">
+
+                            <span class="venue-type chapel">
+                                Chapel
+                            </span>
+
+                            <span class="venue-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            University Chapel
+                        </h3>
+
+
+                        <p>
+                            A dedicated worship space suitable for
+                            Christian services, prayer and approved
+                            spiritual activities.
+                        </p>
+
+
+                        <div class="venue-details">
+
+                            <span>
+                                ⌂ Main Campus
+                            </span>
+
+                            <span>
+                                ◷ Mon – Sun
+                            </span>
+
+                        </div>
+
+
+                        <div class="venue-footer">
+
+                            <span>
+                                Managed by Campus Administration
+                            </span>
+
+                            <button
+                                class="venue-details-button"
+                                data-venue="University Chapel">
+
+                                Details →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= VENUE 2 ================= -->
+
+                <article
+                    class="venue-card"
+                    data-name="university hall"
+                    data-type="hall"
+                    data-status="busy">
+
+
+                    <div class="venue-image hall-image">
+
+                        <span class="venue-image-icon">
+                            ▦
+                        </span>
+
+                        <span class="venue-capacity">
+                            Capacity: 600
+                        </span>
+
+                    </div>
+
+
+                    <div class="venue-content">
+
+
+                        <div class="venue-card-top">
+
+                            <span class="venue-type hall">
+                                Hall
+                            </span>
+
+                            <span class="venue-status busy">
+                                In Use
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            University Hall
+                        </h3>
+
+
+                        <p>
+                            A large multipurpose venue used for
+                            major university events, meetings and
+                            approved community gatherings.
+                        </p>
+
+
+                        <div class="venue-details">
+
+                            <span>
+                                ⌂ Main Campus
+                            </span>
+
+                            <span>
+                                ◷ Mon – Sat
+                            </span>
+
+                        </div>
+
+
+                        <div class="venue-footer">
+
+                            <span>
+                                Managed by Campus Administration
+                            </span>
+
+                            <button
+                                class="venue-details-button"
+                                data-venue="University Hall">
+
+                                Details →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= VENUE 3 ================= -->
+
+                <article
+                    class="venue-card"
+                    data-name="muslim prayer hall"
+                    data-type="prayer"
+                    data-status="available">
+
+
+                    <div class="venue-image prayer-image">
+
+                        <span class="venue-image-icon">
+                            ☾
+                        </span>
+
+                        <span class="venue-capacity">
+                            Capacity: 180
+                        </span>
+
+                    </div>
+
+
+                    <div class="venue-content">
+
+
+                        <div class="venue-card-top">
+
+                            <span class="venue-type prayer">
+                                Prayer Space
+                            </span>
+
+                            <span class="venue-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Muslim Prayer Hall
+                        </h3>
+
+
+                        <p>
+                            A designated prayer space for Muslim
+                            students and approved Islamic activities.
+                        </p>
+
+
+                        <div class="venue-details">
+
+                            <span>
+                                ⌂ Student Centre
+                            </span>
+
+                            <span>
+                                ◷ Mon – Sun
+                            </span>
+
+                        </div>
+
+
+                        <div class="venue-footer">
+
+                            <span>
+                                Managed by Student Affairs
+                            </span>
+
+                            <button
+                                class="venue-details-button"
+                                data-venue="Muslim Prayer Hall">
+
+                                Details →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= VENUE 4 ================= -->
+
+                <article
+                    class="venue-card"
+                    data-name="student centre"
+                    data-type="hall"
+                    data-status="available">
+
+
+                    <div class="venue-image student-image">
+
+                        <span class="venue-image-icon">
+                            ♙
+                        </span>
+
+                        <span class="venue-capacity">
+                            Capacity: 300
+                        </span>
+
+                    </div>
+
+
+                    <div class="venue-content">
+
+
+                        <div class="venue-card-top">
+
+                            <span class="venue-type hall">
+                                Hall
+                            </span>
+
+                            <span class="venue-status available">
+                                Available
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Student Centre
+                        </h3>
+
+
+                        <p>
+                            A flexible student space suitable for
+                            fellowships, discussions and approved
+                            student activities.
+                        </p>
+
+
+                        <div class="venue-details">
+
+                            <span>
+                                ⌂ Student Affairs Area
+                            </span>
+
+                            <span>
+                                ◷ Mon – Sat
+                            </span>
+
+                        </div>
+
+
+                        <div class="venue-footer">
+
+                            <span>
+                                Managed by Student Affairs
+                            </span>
+
+                            <button
+                                class="venue-details-button"
+                                data-venue="Student Centre">
+
+                                Details →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- ================= VENUE 5 ================= -->
+
+                <article
+                    class="venue-card"
+                    data-name="conference room"
+                    data-type="conference"
+                    data-status="busy">
+
+
+                    <div class="venue-image conference-image">
+
+                        <span class="venue-image-icon">
+                            ◫
+                        </span>
+
+                        <span class="venue-capacity">
+                            Capacity: 100
+                        </span>
+
+                    </div>
+
+
+                    <div class="venue-content">
+
+
+                        <div class="venue-card-top">
+
+                            <span class="venue-type conference">
+                                Conference Room
+                            </span>
+
+                            <span class="venue-status busy">
+                                In Use
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Conference Room
+                        </h3>
+
+
+                        <p>
+                            A formal meeting space for seminars,
+                            dialogue forums, planning meetings and
+                            university-approved activities.
+                        </p>
+
+
+                        <div class="venue-details">
+
+                            <span>
+                                ⌂ Administration Block
+                            </span>
+
+                            <span>
+                                ◷ Mon – Fri
+                            </span>
+
+                        </div>
+
+
+                        <div class="venue-footer">
+
+                            <span>
+                                Managed by Administration
+                            </span>
+
+                            <button
+                                class="venue-details-button"
+                                data-venue="Conference Room">
+
+                                Details →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 NO RESULTS
+                 ================================================= -->
+
+            <div
+                class="venue-no-results"
+                id="venueNoResults">
+
+
+                <div class="no-result-icon">
+                    ⌕
+                </div>
+
+
+                <h3>
+                    No venues found
+                </h3>
+
+
+                <p>
+                    Try changing your search or filter options.
+                </p>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 VENUE POLICY
+                 ================================================= -->
+
+            <section class="venue-policy">
+
+
+                <div class="policy-icon">
+                    ✓
+                </div>
+
+
+                <div class="policy-content">
+
+                    <span>
+                        VENUE COORDINATION
+                    </span>
+
+                    <h2>
+                        Use university spaces responsibly
+                    </h2>
+
+                    <p>
+                        Venue availability does not automatically
+                        mean that a space is approved for an activity.
+                        Religious activities should be submitted for
+                        coordination and checked against existing
+                        academic and institutional schedules.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="schedule.html"
+                    class="policy-button">
+
+                    Check Schedule →
+
+                </a>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =================================================
+         FOOTER
+         ================================================= -->
+
+    <footer class="footer">
+
+
+        <div class="container footer-grid">
+
+
+            <div class="footer-about">
+
+
+                <div class="footer-logo">
+
+                    <div class="logo-mark">
+                        M
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            MUST
+                        </strong>
+
+                        <span>
+                            Faith Coordination
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p>
+                    A platform designed to support the coordination
+                    of religious activities within the MUST community
+                    while maintaining harmony with academic activities.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Platform
+                </h4>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Information
+                </h4>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a href="#">
+                    About the System
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Account
+                </h4>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="#">
+                    Help & Support
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MUST Religious Community Coordination System.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+    <!-- =================================================
+         VENUE MODAL
+         ================================================= -->
+
+    <div
+        class="venue-modal"
+        id="venueModal">
+
+
+        <div class="modal-overlay"
+            id="modalOverlay">
+        </div>
+
+
+        <div class="venue-modal-box">
+
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close">
+
+                ×
+
+            </button>
+
+
+            <span class="page-label">
+                VENUE INFORMATION
+            </span>
+
+
+            <h2 id="modalVenueName">
+                University Chapel
+            </h2>
+
+
+            <p id="modalVenueDescription">
+                Venue information.
+            </p>
+
+
+            <div class="modal-info-grid">
+
+
+                <div>
+
+                    <span>
+                        Capacity
+                    </span>
+
+                    <strong id="modalCapacity">
+                        250
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Location
+                    </span>
+
+                    <strong id="modalLocation">
+                        Main Campus
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Availability
+                    </span>
+
+                    <strong id="modalAvailability">
+                        Available
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Booking
+                    </span>
+
+                    <strong>
+                        Approval Required
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <a
+                href="schedule.html"
+                class="modal-button">
+
+                Check Schedule
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/venues.js"></script>
+
+</body>
+
+</html>

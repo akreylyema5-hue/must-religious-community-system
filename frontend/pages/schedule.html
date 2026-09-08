@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="MUST academic and religious activity coordination schedule">
+
+    <title>Schedule | MUST Faith Coordination</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+
+                <div class="logo-mark">M</div>
+
+                <div>
+                    <span class="logo-title">MUST</span>
+                    <span class="logo-subtitle">
+                        Faith Coordination
+                    </span>
+                </div>
+
+            </a>
+
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+                <a href="schedule.html" class="active">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a href="login.html" class="login-button">
+                    Login
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero schedule-hero">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <span>›</span>
+
+                <span>
+                    Schedule
+                </span>
+
+            </div>
+
+
+            <span class="page-label">
+                ACTIVITY COORDINATION
+            </span>
+
+
+            <h1>
+                Community Schedule
+            </h1>
+
+
+            <p>
+                View religious and academic activities together
+                to support effective planning and reduce scheduling
+                conflicts within the MUST community.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="schedule-section">
+
+        <div class="container">
+
+
+            <!-- ================= COORDINATION STATUS ================= -->
+
+            <div class="coordination-status">
+
+                <div class="status-check">
+                    ✓
+                </div>
+
+                <div class="status-text">
+
+                    <strong>
+                        Schedule Coordination Active
+                    </strong>
+
+                    <span>
+                        Religious activities are reviewed against
+                        academic activities before approval.
+                    </span>
+
+                </div>
+
+                <div class="status-badge">
+                    Coordinated
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTROLS ================= -->
+
+            <div class="schedule-controls">
+
+                <div class="week-navigation">
+
+                    <button
+                        class="week-button"
+                        id="previousWeek"
+                        title="Previous week"
+                    >
+                        ←
+                    </button>
+
+                    <div class="current-week">
+
+                        <strong id="weekTitle">
+                            14 – 20 September 2026
+                        </strong>
+
+                        <span>
+                            Weekly Schedule
+                        </span>
+
+                    </div>
+
+                    <button
+                        class="week-button"
+                        id="nextWeek"
+                        title="Next week"
+                    >
+                        →
+                    </button>
+
+                </div>
+
+
+                <div class="schedule-filters">
+
+                    <select id="scheduleFilter">
+
+                        <option value="all">
+                            All Activities
+                        </option>
+
+                        <option value="religious">
+                            Religious Activities
+                        </option>
+
+                        <option value="academic">
+                            Academic Activities
+                        </option>
+
+                    </select>
+
+
+                    <button
+                        class="today-button"
+                        id="todayButton"
+                    >
+                        Today
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LEGEND ================= -->
+
+            <div class="schedule-legend">
+
+                <div class="legend-item">
+
+                    <span class="legend-color religious">
+                    </span>
+
+                    Religious Activity
+
+                </div>
+
+
+                <div class="legend-item">
+
+                    <span class="legend-color academic">
+                    </span>
+
+                    Academic Activity
+
+                </div>
+
+
+                <div class="legend-item">
+
+                    <span class="legend-color conflict">
+                    </span>
+
+                    Potential Conflict
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DESKTOP SCHEDULE ================= -->
+
+            <div class="schedule-wrapper">
+
+                <div class="schedule-grid">
+
+
+                    <!-- TIME COLUMN -->
+
+                    <div class="time-column">
+
+                        <div class="time-header">
+                            TIME
+                        </div>
+
+                        <div class="time-slot">
+                            08:00
+                        </div>
+
+                        <div class="time-slot">
+                            09:00
+                        </div>
+
+                        <div class="time-slot">
+                            10:00
+                        </div>
+
+                        <div class="time-slot">
+                            11:00
+                        </div>
+
+                        <div class="time-slot">
+                            12:00
+                        </div>
+
+                        <div class="time-slot">
+                            13:00
+                        </div>
+
+                        <div class="time-slot">
+                            14:00
+                        </div>
+
+                        <div class="time-slot">
+                            15:00
+                        </div>
+
+                        <div class="time-slot">
+                            16:00
+                        </div>
+
+                        <div class="time-slot">
+                            17:00
+                        </div>
+
+                        <div class="time-slot">
+                            18:00
+                        </div>
+
+                    </div>
+
+
+                    <!-- MONDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="monday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                MON
+                            </span>
+
+                            <strong>
+                                14
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event academic-event"
+                                style="top: 60px; height: 90px;"
+                                data-type="academic"
+                            >
+
+                                <strong>
+                                    Database Systems
+                                </strong>
+
+                                <span>
+                                    09:00 – 10:30
+                                </span>
+
+                                <small>
+                                    Lecture Theatre 1
+                                </small>
+
+                            </div>
+
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 510px; height: 80px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Student Prayer
+                                </strong>
+
+                                <span>
+                                    17:00 – 18:00
+                                </span>
+
+                                <small>
+                                    Prayer Room
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TUESDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="tuesday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                TUE
+                            </span>
+
+                            <strong>
+                                15
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event academic-event"
+                                style="top: 120px; height: 90px;"
+                                data-type="academic"
+                            >
+
+                                <strong>
+                                    Computer Networks
+                                </strong>
+
+                                <span>
+                                    10:00 – 11:30
+                                </span>
+
+                                <small>
+                                    Lecture Theatre 2
+                                </small>
+
+                            </div>
+
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 420px; height: 90px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Faith & Wellbeing Seminar
+                                </strong>
+
+                                <span>
+                                    15:00 – 16:00
+                                </span>
+
+                                <small>
+                                    Conference Room
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- WEDNESDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="wednesday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                WED
+                            </span>
+
+                            <strong>
+                                16
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event academic-event"
+                                style="top: 60px; height: 90px;"
+                                data-type="academic"
+                            >
+
+                                <strong>
+                                    Software Engineering
+                                </strong>
+
+                                <span>
+                                    09:00 – 10:30
+                                </span>
+
+                                <small>
+                                    Lecture Theatre 3
+                                </small>
+
+                            </div>
+
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 480px; height: 90px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Christian Fellowship
+                                </strong>
+
+                                <span>
+                                    16:30 – 18:00
+                                </span>
+
+                                <small>
+                                    Student Centre
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- THURSDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="thursday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                THU
+                            </span>
+
+                            <strong>
+                                17
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event academic-event conflict-event"
+                                style="top: 180px; height: 90px;"
+                                data-type="academic"
+                            >
+
+                                <strong>
+                                    Web Application Development
+                                </strong>
+
+                                <span>
+                                    11:00 – 12:30
+                                </span>
+
+                                <small>
+                                    Computer Lab 1
+                                </small>
+
+                            </div>
+
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 540px; height: 80px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Interfaith Dialogue
+                                </strong>
+
+                                <span>
+                                    17:30 – 18:30
+                                </span>
+
+                                <small>
+                                    Conference Room
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FRIDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="friday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                FRI
+                            </span>
+
+                            <strong>
+                                18
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event academic-event"
+                                style="top: 60px; height: 90px;"
+                                data-type="academic"
+                            >
+
+                                <strong>
+                                    Information Security
+                                </strong>
+
+                                <span>
+                                    09:00 – 10:30
+                                </span>
+
+                                <small>
+                                    Lecture Theatre 2
+                                </small>
+
+                            </div>
+
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 300px; height: 75px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Friday Jumu'ah Prayer
+                                </strong>
+
+                                <span>
+                                    13:00 – 14:00
+                                </span>
+
+                                <small>
+                                    Muslim Prayer Hall
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SATURDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="saturday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                SAT
+                            </span>
+
+                            <strong>
+                                19
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 60px; height: 110px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Saturday Worship
+                                </strong>
+
+                                <span>
+                                    09:00 – 11:00
+                                </span>
+
+                                <small>
+                                    University Hall
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUNDAY -->
+
+                    <div
+                        class="day-column"
+                        data-day="sunday"
+                    >
+
+                        <div class="day-header">
+
+                            <span>
+                                SUN
+                            </span>
+
+                            <strong>
+                                20
+                            </strong>
+
+                        </div>
+
+
+                        <div class="day-body">
+
+                            <div
+                                class="schedule-event religious-event"
+                                style="top: 60px; height: 130px;"
+                                data-type="religious"
+                            >
+
+                                <strong>
+                                    Sunday Worship
+                                </strong>
+
+                                <span>
+                                    09:00 – 12:00
+                                </span>
+
+                                <small>
+                                    University Chapel
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= MOBILE EVENTS ================= -->
+
+            <div
+                class="mobile-schedule"
+                id="mobileSchedule"
+            >
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            MONDAY
+                        </span>
+
+                        <strong>
+                            14 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event academic-mobile"
+                        data-type="academic"
+                    >
+
+                        <div class="mobile-event-time">
+                            09:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Database Systems
+                            </strong>
+
+                            <span>
+                                09:00 – 10:30 · Lecture Theatre 1
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            17:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Student Prayer
+                            </strong>
+
+                            <span>
+                                17:00 – 18:00 · Prayer Room
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            TUESDAY
+                        </span>
+
+                        <strong>
+                            15 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event academic-mobile"
+                        data-type="academic"
+                    >
+
+                        <div class="mobile-event-time">
+                            10:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Computer Networks
+                            </strong>
+
+                            <span>
+                                10:00 – 11:30 · Lecture Theatre 2
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            15:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Faith & Wellbeing Seminar
+                            </strong>
+
+                            <span>
+                                15:00 – 16:00 · Conference Room
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            WEDNESDAY
+                        </span>
+
+                        <strong>
+                            16 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event academic-mobile"
+                        data-type="academic"
+                    >
+
+                        <div class="mobile-event-time">
+                            09:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Software Engineering
+                            </strong>
+
+                            <span>
+                                09:00 – 10:30 · Lecture Theatre 3
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            16:30
+                        </div>
+
+                        <div>
+                            <strong>
+                                Christian Fellowship
+                            </strong>
+
+                            <span>
+                                16:30 – 18:00 · Student Centre
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            THURSDAY
+                        </span>
+
+                        <strong>
+                            17 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event academic-mobile"
+                        data-type="academic"
+                    >
+
+                        <div class="mobile-event-time">
+                            11:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Web Application Development
+                            </strong>
+
+                            <span>
+                                11:00 – 12:30 · Computer Lab 1
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            17:30
+                        </div>
+
+                        <div>
+                            <strong>
+                                Interfaith Dialogue
+                            </strong>
+
+                            <span>
+                                17:30 – 18:30 · Conference Room
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            FRIDAY
+                        </span>
+
+                        <strong>
+                            18 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event academic-mobile"
+                        data-type="academic"
+                    >
+
+                        <div class="mobile-event-time">
+                            09:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Information Security
+                            </strong>
+
+                            <span>
+                                09:00 – 10:30 · Lecture Theatre 2
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            13:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Friday Jumu'ah Prayer
+                            </strong>
+
+                            <span>
+                                13:00 – 14:00 · Muslim Prayer Hall
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            SATURDAY
+                        </span>
+
+                        <strong>
+                            19 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            09:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Saturday Worship
+                            </strong>
+
+                            <span>
+                                09:00 – 11:00 · University Hall
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="mobile-day">
+
+                    <div class="mobile-day-header">
+
+                        <span>
+                            SUNDAY
+                        </span>
+
+                        <strong>
+                            20 SEP
+                        </strong>
+
+                    </div>
+
+
+                    <div
+                        class="mobile-event religious-mobile"
+                        data-type="religious"
+                    >
+
+                        <div class="mobile-event-time">
+                            09:00
+                        </div>
+
+                        <div>
+                            <strong>
+                                Sunday Worship
+                            </strong>
+
+                            <span>
+                                09:00 – 12:00 · University Chapel
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONFLICT NOTICE ================= -->
+
+            <div class="conflict-panel">
+
+                <div class="conflict-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <span>
+                        SCHEDULE REVIEW
+                    </span>
+
+                    <h3>
+                        Conflict detection
+                    </h3>
+
+                    <p>
+                        Before a religious activity is approved,
+                        the system checks its date, time and venue
+                        against relevant academic activities.
+                    </p>
+
+                </div>
+
+                <span class="review-badge">
+                    System Check
+                </span>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+
+                    <div class="logo-mark">
+                        M
+                    </div>
+
+                    <div>
+                        <strong>
+                            MUST
+                        </strong>
+
+                        <span>
+                            Faith Coordination
+                        </span>
+                    </div>
+
+                </div>
+
+                <p>
+                    A platform designed to support the coordination
+                    of religious activities within the MUST community
+                    while maintaining harmony with academic activities.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Platform
+                </h4>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Information
+                </h4>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a href="#">
+                    About the System
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Account
+                </h4>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="#">
+                    Help & Support
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MUST Religious Community Coordination System.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/schedule.js"></script>
+
+</body>
+
+</html>

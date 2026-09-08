@@ -1,0 +1,504 @@
+/* =====================================================
+   FAITH COMMUNITIES PAGE
+   ===================================================== */
+
+
+/* ================= PAGE HERO ================= */
+
+.page-hero {
+    background:
+        linear-gradient(
+            110deg,
+            #eef8f2,
+            #ffffff
+        );
+
+    padding: 65px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.breadcrumb {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+
+    color: #7b8780;
+    font-size: 12px;
+
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.page-label {
+    color: var(--secondary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.page-hero h1 {
+    color: var(--dark);
+    font-size: clamp(38px, 5vw, 54px);
+    line-height: 1.1;
+
+    margin: 9px 0 15px;
+}
+
+.page-hero p {
+    max-width: 650px;
+    font-size: 16px;
+}
+
+
+/* ================= MAIN SECTION ================= */
+
+.communities-section {
+    padding: 70px 0 90px;
+    background: #fbfcfb;
+}
+
+
+/* ================= SEARCH TOOLS ================= */
+
+.community-tools {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    padding: 18px;
+
+    display: flex;
+    gap: 15px;
+
+    margin-bottom: 55px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.search-box {
+    flex: 1;
+
+    height: 48px;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background: #fafcfb;
+}
+
+.search-box span {
+    color: var(--primary);
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--dark);
+    font-size: 14px;
+}
+
+.community-tools select {
+    min-width: 210px;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    background: var(--white);
+
+    color: var(--dark);
+
+    padding: 0 15px;
+
+    outline: none;
+
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+/* ================= HEADING ================= */
+
+.community-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 28px;
+}
+
+.small-label {
+    color: var(--secondary);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.community-heading h2 {
+    color: var(--dark);
+    font-size: 28px;
+
+    margin-top: 5px;
+}
+
+.community-count {
+    text-align: right;
+}
+
+.community-count strong {
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.community-count span {
+    display: block;
+    color: #7a867f;
+    font-size: 11px;
+}
+
+
+/* ================= COMMUNITY GRID ================= */
+
+.community-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+
+/* ================= COMMUNITY CARD ================= */
+
+.community-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    padding: 25px;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s;
+}
+
+.community-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: var(--shadow-md);
+
+    border-color: #c6d6cd;
+}
+
+.community-card.hidden {
+    display: none;
+}
+
+.community-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.community-icon {
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Community colors */
+
+.community-icon.catholic {
+    background: #eaf3ff;
+    color: #3175c6;
+}
+
+.community-icon.protestant {
+    background: #eaf8f0;
+    color: #19834f;
+}
+
+.community-icon.muslim {
+    background: #e8f7ef;
+    color: #087548;
+}
+
+.community-icon.adventist {
+    background: #fff4df;
+    color: #c27c10;
+}
+
+.community-icon.pentecostal {
+    background: #fff0e8;
+    color: #d45c24;
+}
+
+.community-icon.interfaith {
+    background: #f0eaff;
+    color: #7045bb;
+}
+
+
+/* ================= STATUS ================= */
+
+.status {
+    font-size: 10px;
+    font-weight: 700;
+
+    padding: 5px 9px;
+
+    border-radius: 20px;
+}
+
+.active-status {
+    background: #eaf8f0;
+    color: #197044;
+}
+
+
+/* ================= CARD CONTENT ================= */
+
+.community-card h3 {
+    color: var(--dark);
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    margin-bottom: 6px;
+}
+
+.community-type {
+    display: inline-block;
+
+    color: var(--primary);
+
+    background: var(--primary-light);
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    margin-bottom: 14px;
+}
+
+.community-card p {
+    font-size: 13px;
+
+    min-height: 65px;
+
+    margin-bottom: 20px;
+}
+
+.community-info {
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    padding: 14px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    margin-bottom: 17px;
+}
+
+.community-info span {
+    font-size: 11px;
+    color: #66736b;
+}
+
+.community-link {
+    color: var(--primary);
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.community-link:hover {
+    color: var(--primary-dark);
+}
+
+
+/* ================= NO RESULTS ================= */
+
+.no-results {
+    display: none;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.no-results.show {
+    display: block;
+}
+
+.no-results > div {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: var(--primary-light);
+    color: var(--primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto auto 15px;
+
+    font-size: 25px;
+}
+
+.no-results h3 {
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.no-results p {
+    font-size: 13px;
+}
+
+
+/* ================= BANNER ================= */
+
+.community-banner {
+    background: var(--primary);
+    padding: 55px 0;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.banner-content > div {
+    max-width: 700px;
+}
+
+.banner-content span {
+    color: #bde3cc;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+}
+
+.banner-content h2 {
+    color: var(--white);
+
+    font-size: 29px;
+
+    margin: 7px 0;
+}
+
+.banner-content p {
+    color: #c7d9cf;
+    font-size: 13px;
+}
+
+.banner-content .btn {
+    flex-shrink: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+
+    .community-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .community-tools {
+        flex-direction: column;
+    }
+
+    .community-tools select {
+        height: 48px;
+    }
+
+    .community-heading {
+        align-items: flex-start;
+    }
+
+    .community-count {
+        display: none;
+    }
+
+    .community-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .banner-content .btn {
+        width: auto;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .communities-section {
+        padding-top: 45px;
+    }
+
+    .page-hero {
+        padding: 45px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 37px;
+    }
+
+}

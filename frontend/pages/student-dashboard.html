@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard | MUST Religious Community</title>
+
+    <link rel="stylesheet" href="../css/student-dashboard.css">
+</head>
+
+<body>
+
+<!-- TOP HEADER -->
+<header class="topbar">
+
+    <div class="brand">
+        <div class="brand-logo">M</div>
+
+        <div>
+            <h2>MUST Religious Community</h2>
+            <span>Student Portal</span>
+        </div>
+    </div>
+
+    <div class="topbar-right">
+        <span id="headerStudentName">Student</span>
+
+        <button id="logoutBtn" class="logout-btn">
+            Logout
+        </button>
+    </div>
+
+</header>
+
+
+<div class="dashboard-wrapper">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="profile-box">
+
+            <div class="profile-avatar">
+                <span>👤</span>
+            </div>
+
+            <h3 id="profileName">Student</h3>
+
+            <p id="profileReg">
+                Registration Number
+            </p>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="student-dashboard.html" class="nav-link active">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="activities.html" class="nav-link">
+                <span>📅</span>
+                Activities
+            </a>
+
+            <a href="venues.html" class="nav-link">
+                <span>📍</span>
+                Venues
+            </a>
+
+            <a href="schedule.html" class="nav-link">
+                <span>🗓</span>
+                Schedule
+            </a>
+
+            <a href="faith-communities.html" class="nav-link">
+                <span>⛪</span>
+                Faith Communities
+            </a>
+
+            <a href="announcements.html" class="nav-link">
+                <span>📢</span>
+                Announcements
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- WELCOME -->
+        <section class="welcome-section">
+
+            <div>
+                <p class="welcome-small">
+                    STUDENT DASHBOARD
+                </p>
+
+                <h1>
+                    Welcome back,
+                    <span id="welcomeName">Student</span> 👋
+                </h1>
+
+                <p>
+                    Manage your programme change application and
+                    access MUST religious community services.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- STAT CARDS -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    👤
+                </div>
+
+                <div>
+                    <span>Student</span>
+                    <strong id="studentStatus">
+                        Active
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🎓
+                </div>
+
+                <div>
+                    <span>Current Programme</span>
+                    <strong id="profileProgram">
+                        Loading...
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                  ✓
+                </div>
+
+                <div>
+                    <span>Application Status</span>
+                    <strong id="dashboardStatus">
+                        Checking...
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROFILE -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>My Profile</h2>
+                    <p>Your student account information</p>
+                </div>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <label>Full Name</label>
+                    <strong id="studentName">
+                        Loading...
+                    </strong>
+                </div>
+
+                <div class="profile-item">
+                    <label>Registration Number</label>
+                    <strong id="studentReg">
+                        Loading...
+                    </strong>
+                </div>
+
+                <div class="profile-item">
+                    <label>Email Address</label>
+                    <strong id="studentEmail">
+                        Loading...
+                    </strong>
+                </div>
+
+                <div class="profile-item">
+                    <label>Programme</label>
+                    <strong id="studentProgram">
+                        Loading...
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROGRAMME CHANGE -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Programme Change Application</h2>
+
+                    <p>
+                        Submit a request to change your academic programme.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="courseChangeForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label for="formCurrentProgram">
+                            Current Programme
+                        </label>
+
+                        <input
+                            type="text"
+                            id="formCurrentProgram"
+                            name="currentProgramme"
+                            readonly
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="targetProgram">
+                            Target Programme
+                        </label>
+
+                        <input
+                            type="text"
+                            id="targetProgram"
+                            name="targetProgramme"
+                            placeholder="Enter target programme"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reason">
+                        Reason for Change
+                    </label>
+
+                    <textarea
+                        id="reason"
+                        name="reason"
+                        rows="5"
+                        placeholder="Explain why you want to change your programme..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    id="submitApplicationBtn"
+                    class="primary-btn"
+                >
+                    Submit Application
+                </button>
+
+            </form>
+
+
+            <div
+                id="applicationMessage"
+                class="message"
+            ></div>
+
+        </section>
+
+
+        <!-- APPLICATION DETAILS -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Application Details</h2>
+                    <p>Latest programme change request</p>
+                </div>
+
+            </div>
+
+
+            <div
+                id="applicationDetails"
+                class="application-details"
+            >
+                <p class="empty-message">
+                    No application information available.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- QUICK ACTIONS -->
+        <section class="dashboard-card">
+
+            <div class="card-header">
+
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Access other student services</p>
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+
+                <a href="activities.html">
+                    <span class="quick-icon">📅</span>
+                    <strong>Activities</strong>
+                    <small>View religious activities</small>
+                </a>
+
+
+                <a href="venues.html">
+                    <span class="quick-icon">📍</span>
+                    <strong>Venues</strong>
+                    <small>Find worship venues</small>
+                </a>
+
+
+                <a href="faith-communities.html">
+                    <span class="quick-icon">⛪</span>
+                    <strong>Faith Communities</strong>
+                    <small>Explore communities</small>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../js/main.js"></script>
+<script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Religious activities and events at MUST">
+
+    <title>Activities | MUST Faith Coordination</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/activities.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="../index.html" class="logo">
+
+                <div class="logo-mark">M</div>
+
+                <div>
+                    <span class="logo-title">MUST</span>
+                    <span class="logo-subtitle">
+                        Faith Coordination
+                    </span>
+                </div>
+
+            </a>
+
+
+            <button class="menu-toggle" id="menuToggle">
+                ☰
+            </button>
+
+
+            <nav class="navigation" id="navigation">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html" class="active">
+                    Activities
+                </a>
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a href="login.html" class="login-button">
+                    Login
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HERO ================= -->
+
+    <section class="page-hero activity-hero">
+
+        <div class="container">
+
+            <div class="breadcrumb">
+
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <span>›</span>
+
+                <span>
+                    Activities
+                </span>
+
+            </div>
+
+
+            <span class="page-label">
+                COMMUNITY ACTIVITIES
+            </span>
+
+
+            <h1>
+                Religious Activities
+            </h1>
+
+
+            <p>
+                Explore upcoming religious services, fellowships,
+                seminars, prayer meetings and other faith-based
+                activities taking place within the MUST community.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="activities-section">
+
+        <div class="container">
+
+
+            <!-- ================= QUICK STATS ================= -->
+
+            <div class="activity-stats">
+
+                <div class="activity-stat">
+
+                    <div class="stat-icon green">
+                        ◷
+                    </div>
+
+                    <div>
+                        <strong id="upcomingCount">
+                            6
+                        </strong>
+
+                        <span>
+                            Upcoming Activities
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="activity-stat">
+
+                    <div class="stat-icon gold">
+                        ✦
+                    </div>
+
+                    <div>
+                        <strong>
+                            4
+                        </strong>
+
+                        <span>
+                            Faith Communities
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="activity-stat">
+
+                    <div class="stat-icon blue">
+                        ⌂
+                    </div>
+
+                    <div>
+                        <strong>
+                            5
+                        </strong>
+
+                        <span>
+                            Available Venues
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="activity-stat">
+
+                    <div class="stat-icon purple">
+                        ✓
+                    </div>
+
+                    <div>
+                        <strong>
+                            100%
+                        </strong>
+
+                        <span>
+                            Coordinated
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= FILTERS ================= -->
+
+            <div class="activity-tools">
+
+                <div class="activity-search">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="activitySearch"
+                        placeholder="Search activities..."
+                    >
+
+                </div>
+
+
+                <select id="activityType">
+
+                    <option value="all">
+                        All Activities
+                    </option>
+
+                    <option value="worship">
+                        Worship Service
+                    </option>
+
+                    <option value="fellowship">
+                        Fellowship
+                    </option>
+
+                    <option value="prayer">
+                        Prayer
+                    </option>
+
+                    <option value="seminar">
+                        Seminar
+                    </option>
+
+                    <option value="dialogue">
+                        Interfaith Dialogue
+                    </option>
+
+                </select>
+
+
+                <select id="activityDay">
+
+                    <option value="all">
+                        All Days
+                    </option>
+
+                    <option value="monday">
+                        Monday
+                    </option>
+
+                    <option value="tuesday">
+                        Tuesday
+                    </option>
+
+                    <option value="wednesday">
+                        Wednesday
+                    </option>
+
+                    <option value="thursday">
+                        Thursday
+                    </option>
+
+                    <option value="friday">
+                        Friday
+                    </option>
+
+                    <option value="saturday">
+                        Saturday
+                    </option>
+
+                    <option value="sunday">
+                        Sunday
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ================= SECTION HEADER ================= -->
+
+            <div class="activities-heading">
+
+                <div>
+
+                    <span class="small-label">
+                        UPCOMING EVENTS
+                    </span>
+
+                    <h2>
+                        What's Happening
+                    </h2>
+
+                </div>
+
+
+                <div class="view-options">
+
+                    <button
+                        class="view-button active"
+                        id="cardView"
+                    >
+                        ▦
+                    </button>
+
+                    <button
+                        class="view-button"
+                        id="listView"
+                    >
+                        ☷
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ACTIVITIES ================= -->
+
+            <div
+                class="activities-grid"
+                id="activitiesGrid"
+            >
+
+
+                <!-- ACTIVITY 1 -->
+
+                <article
+                    class="activity-card"
+                    data-type="worship"
+                    data-day="sunday"
+                    data-name="sunday worship service"
+                >
+
+                    <div class="activity-date">
+
+                        <strong>
+                            13
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category worship">
+                                Worship Service
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Sunday Worship Service
+                        </h3>
+
+
+                        <p>
+                            Weekly worship service and fellowship
+                            for members of the Christian community.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 09:00 AM – 12:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ University Chapel
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                Catholic Students Community
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACTIVITY 2 -->
+
+                <article
+                    class="activity-card"
+                    data-type="prayer"
+                    data-day="friday"
+                    data-name="friday jumuah prayer"
+                >
+
+                    <div class="activity-date muslim-date">
+
+                        <strong>
+                            18
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category prayer">
+                                Prayer
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Friday Jumu'ah Prayer
+                        </h3>
+
+
+                        <p>
+                            Congregational Friday prayer and
+                            community gathering.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 01:00 PM – 02:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ Muslim Prayer Hall
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                Muslim Students Association
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACTIVITY 3 -->
+
+                <article
+                    class="activity-card"
+                    data-type="fellowship"
+                    data-day="wednesday"
+                    data-name="student christian fellowship"
+                >
+
+                    <div class="activity-date">
+
+                        <strong>
+                            16
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category fellowship">
+                                Fellowship
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Student Christian Fellowship
+                        </h3>
+
+
+                        <p>
+                            Fellowship, worship, discussion and
+                            spiritual encouragement for students.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 05:00 PM – 07:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ Student Centre
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                Protestant Students Fellowship
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACTIVITY 4 -->
+
+                <article
+                    class="activity-card"
+                    data-type="worship"
+                    data-day="saturday"
+                    data-name="saturday worship service"
+                >
+
+                    <div class="activity-date adventist-date">
+
+                        <strong>
+                            19
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category worship">
+                                Worship Service
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Saturday Worship Service
+                        </h3>
+
+
+                        <p>
+                            Weekly worship, Bible study and
+                            fellowship gathering.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 09:00 AM – 01:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ University Hall
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                Seventh-day Adventist Students
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACTIVITY 5 -->
+
+                <article
+                    class="activity-card"
+                    data-type="seminar"
+                    data-day="tuesday"
+                    data-name="faith and student wellbeing seminar"
+                >
+
+                    <div class="activity-date seminar-date">
+
+                        <strong>
+                            22
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category seminar">
+                                Seminar
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Faith & Student Wellbeing Seminar
+                        </h3>
+
+
+                        <p>
+                            A discussion on faith, personal development
+                            and maintaining balance as a university student.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 03:00 PM – 05:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ Lecture Theatre 2
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                MUST Interfaith Community
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ACTIVITY 6 -->
+
+                <article
+                    class="activity-card"
+                    data-type="dialogue"
+                    data-day="thursday"
+                    data-name="interfaith dialogue forum"
+                >
+
+                    <div class="activity-date dialogue-date">
+
+                        <strong>
+                            24
+                        </strong>
+
+                        <span>
+                            SEP
+                        </span>
+
+                    </div>
+
+
+                    <div class="activity-content">
+
+                        <div class="activity-top">
+
+                            <span class="activity-category dialogue">
+                                Interfaith Dialogue
+                            </span>
+
+                            <span class="activity-status">
+                                Scheduled
+                            </span>
+
+                        </div>
+
+
+                        <h3>
+                            Interfaith Dialogue Forum
+                        </h3>
+
+
+                        <p>
+                            A forum promoting mutual understanding,
+                            respect and peaceful coexistence among
+                            students of different faiths.
+                        </p>
+
+
+                        <div class="activity-details">
+
+                            <span>
+                                ◷ 04:00 PM – 06:00 PM
+                            </span>
+
+                            <span>
+                                ⌂ Conference Room
+                            </span>
+
+                        </div>
+
+
+                        <div class="activity-footer">
+
+                            <span class="community-name">
+                                MUST Interfaith Community
+                            </span>
+
+                            <a href="#">
+                                View Details →
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+            <!-- ================= NO RESULTS ================= -->
+
+            <div class="activity-no-results" id="activityNoResults">
+
+                <div class="no-result-icon">
+                    ⌕
+                </div>
+
+                <h3>
+                    No activities found
+                </h3>
+
+                <p>
+                    Try changing your search or filter options.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= COORDINATION MESSAGE ================= -->
+
+    <section class="coordination-message">
+
+        <div class="container">
+
+            <div class="coordination-content">
+
+                <div class="coordination-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <span>
+                        ACTIVITY COORDINATION
+                    </span>
+
+                    <h2>
+                        Plan your activities responsibly
+                    </h2>
+
+                    <p>
+                        Religious activities should be coordinated
+                        with university academic programs to minimize
+                        disruption and support a balanced campus life.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-about">
+
+                <div class="footer-logo">
+
+                    <div class="logo-mark">
+                        M
+                    </div>
+
+                    <div>
+                        <strong>MUST</strong>
+
+                        <span>
+                            Faith Coordination
+                        </span>
+                    </div>
+
+                </div>
+
+                <p>
+                    A platform designed to support the coordination
+                    of religious activities within the MUST community
+                    while maintaining harmony with academic activities.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Platform
+                </h4>
+
+                <a href="faith-communities.html">
+                    Faith Communities
+                </a>
+
+                <a href="activities.html">
+                    Activities
+                </a>
+
+                <a href="schedule.html">
+                    Schedule
+                </a>
+
+                <a href="venues.html">
+                    Venues
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Information
+                </h4>
+
+                <a href="announcements.html">
+                    Announcements
+                </a>
+
+                <a href="#">
+                    About the System
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    Account
+                </h4>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="#">
+                    Help & Support
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MUST Religious Community Coordination System.
+                    All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+    <script src="../js/activities.js"></script>
+
+</body>
+
+</html>
